@@ -1,0 +1,14 @@
+{
+  "name": "axelcho/businessday",
+  "description": "United State Business Day and Holidays Handler",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Axel Cho",
+      "email": "axelcho@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "BusinessDay\\": "src" }
+  }
+}
