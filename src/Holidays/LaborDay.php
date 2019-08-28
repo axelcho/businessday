@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class LaborDay implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "First Monday of September";
+        return "First Monday of September ". $year;
     }
 
     public function isAdjustable()

@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class PresidentsDay implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "Third Monday of February";
+        return "Third Monday of February ".$year;
     }
 
     public function isAdjustable()

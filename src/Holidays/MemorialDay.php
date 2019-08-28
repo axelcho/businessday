@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class MemorialDay implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "Last Monday of May";
+        return "Last Monday of May ".$year;
     }
 
     public function isAdjustable()

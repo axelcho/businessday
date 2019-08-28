@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class Thanksgiving implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "Fourth Thursday of November";
+        return "Fourth Thursday of November ".$year;
     }
 
     public function isAdjustable()

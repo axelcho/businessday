@@ -187,7 +187,7 @@ class BusinessDay
     private function checkHoliday(HolidayInterface $holiday)
     {
         try {
-            $check = new DateTime($holiday->getDefinition(). " ". $this->year);
+            $check = new DateTime($holiday->getDefinition($this->year));
         } catch (Exception $e) {
             return false;
         }

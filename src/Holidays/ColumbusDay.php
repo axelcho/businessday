@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class ColumbusDay implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "Second Monday of October";
+        return "Second Monday of October ". $year;
     }
 
     public function isAdjustable()

@@ -3,9 +3,9 @@ namespace BusinessDay\Holidays;
 
 class IndependenceDay implements HolidayInterface
 {
-    public function getDefinition()
+    public function getDefinition($year)
     {
-        return "July 4";
+        return "July 4 ". $year;
     }
 
     public function isAdjustable()
